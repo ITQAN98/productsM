@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Goods</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .sortable:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>Company & Group Name</th>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Description</th>
+                    <th>Color</th>
+                    <th>Manufacturer Number</th>
+                    <th>Buyer Number</th>
+                    <th class="sortable" onclick="sortTable()">Quantity</th>
+                    <th>Weight</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                    <th>CBM</th>
+                </tr>
+            </thead>
+            <tbody id="product-body">
+                <tr>
+                    <td><strong>GAINSCHA AUTO ID CO., LTD.</strong><br>Barcode Printer</td>
+                    <td><img src="./img/GA-E200I.jpeg" alt="GA-E200I"></td>
+                    <td>GA-E200I</td>
+                    <td>80mm Receipt Printer, USB+LAN+BT</td>
+                    <td>Black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">5</td>
+                    <td class="weight">## kg</td>
+                    <td class="price">$36.00</td>
+                    <td class="amount">$180.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>GAINSCHA AUTO ID CO., LTD.</strong><br>Barcode Printer</td>
+                    <td><img src="./img/GS-2208D.jpeg" alt="GS-2208D"></td>
+                    <td>GS-2208D</td>
+                    <td>80mm Barcode Printer, USB+USB HOST+LAN</td>
+                    <td>Black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">5</td>
+                    <td class="weight">## kg</td>
+                    <td class="price">$68.00</td>
+                    <td class="amount">$340.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>GAINSCHA AUTO ID CO., LTD.</strong><br>Barcode Printer</td>
+                    <td><img src="./img/B300.jpeg" alt="B300"></td>
+                    <td>B300</td>
+                    <td>80mm Portable Label and Receipt Printer, USB+BT</td>
+                    <td>Black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">5</td>
+                    <td class="weight">## kg</td>
+                    <td class="price">$38.00</td>
+                    <td class="amount">$190.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>GAINSCHA AUTO ID CO., LTD.</strong><br>Barcode Printer</td>
+                    <td><img src="./img/printer.jpeg" alt="GA-G200"></td>
+                    <td>GA-G200</td>
+                    <td>80mm Receipt Printer, USB+LAN+Serial</td>
+                    <td>Black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">5</td>
+                    <td class="weight">## kg</td>
+                    <td class="price">$45.00</td>
+                    <td class="amount">$225.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>GAINSCHA AUTO ID CO., LTD.</strong><br>Barcode Printer</td>
+                    <td><img src="./img/GA-2408TE.jpeg" alt="GA-2408TE"></td>
+                    <td>GA-2408TE</td>
+                    <td>104mm Barcode Printer, USB only</td>
+                    <td>Black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">2</td>
+                    <td class="weight">## kg</td>
+                    <td class="price">$580.00</td>
+                    <td class="amount">$1,160.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>GAINSCHA AUTO ID CO., LTD.</strong><br>Barcode Printer</td>
+                    <td><img src="./img/GP-2120TUA.jpeg" alt="GP-2120TUA"></td>
+                    <td>GP-2120TUA</td>
+                    <td>58mm Barcode Printer, USB+BT</td>
+                    <td>Black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">5</td>
+                    <td class="weight">##kg</td>
+                    <td class="price">$30.00</td>
+                    <td class="amount">$150.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>GAINSCHA AUTO ID CO., LTD.</strong><br>Barcode Printer</td>
+                    <td><img src="./img/GA-E200I.jpeg" alt="GP-2120TUA"></td>
+                    <td>GA-E200I</td>
+                    <td>80mm Receipt Printer,USB + LAN</td>
+                    <td>Black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">50</td>
+                    <td class="weight">##kg</td>
+                    <td class="price">$28.00</td>
+                    <td class="amount">$1,400.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>GAINSCHA AUTO ID CO., LTD.</strong><br>Barcode Printer</td>
+                    <td><img src="./img/GA-E200I.jpeg" alt="GP-2120TUA"></td>
+                    <td>GA-E200I</td>
+                    <td>80mm Receipt Printer ,USB only</td>
+                    <td>Black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">50</td>
+                    <td class="weight">##kg</td>
+                    <td class="price">$24.00</td>
+                    <td class="amount">$1,200.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>SHENZHEN HOPESTAR SCI-TECH</strong><br>All in One PC</td>
+                    <td><img src="./img/1.png" alt="Product 1"></td>
+                    <td>All in One PC</td>
+                    <td>Capacitive touch screen, i5 gen12, FHD, 8GB+512GB, up-down stand</td>
+                    <td>Grey</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">4</td>
+                    <td class="weight">27 kg</td>
+                    <td class="price">$454.00</td>
+                    <td class="amount">$1,816.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>SHENZHEN HOPESTAR SCI-TECH</strong><br>All in One PC</td>
+                    <td><img src="./img/2.jpg" alt="Product 2"></td>
+                    <td>All in One PC</td>
+                    <td>NO TOUCH, i5 gen12, FHD, 8GB+512GB, up-down stand</td>
+                    <td>Grey</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">4</td>
+                    <td class="weight">27 kg</td>
+                    <td class="price">$378.00</td>
+                    <td class="amount">$1,512.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>SHENZHEN HOPESTAR SCI-TECH</strong><br>mini pc </td>
+                    <td><img src="./img/download.jpeg" alt="Product 2"></td>
+                    <td>mini pc </td>
+                    <td>mini pc 13 gen 128+256gb</td>
+                    <td>Black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">5</td>
+                    <td class="weight">## kg</td>
+                    <td class="price">$320.00</td>
+                    <td class="amount">$1,600.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>SHENZHEN HOPESTAR SCI-TECH</strong><br>All in One PC</td>
+                    <td><img src="./img/1.png" alt="Product 1"></td>
+                    <td>All in One PC</td>
+                    <td>Capacitive touch screen, i3 gen11, FHD, 8GB+512GB, up-down stand</td>
+                    <td>Grey</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">4</td>
+                    <td class="weight">27 kg</td>
+                    <td class="price">$372.00</td>
+                    <td class="amount">$1,488.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>SHENZHEN HOPESTAR SCI-TECH</strong><br>All in One PC</td>
+                    <td><img src="./img/2.jpg" alt="Product 2"></td>
+                    <td>All in One PC</td>
+                    <td>NO TOUCH, i3 gen 11, FHD, 8GB+512GB, up-down stand</td>
+                    <td>Grey</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">4</td>
+                    <td class="weight">27 kg</td>
+                    <td class="price">$299.00</td>
+                    <td class="amount">$1,196.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>SHENZHEN HOPESTAR SCI-TECH</strong><br>Monitors</td>
+                    <td><img src="./img/3.png" alt="Product 2"></td>
+                    <td>Monitors</td>
+                    <td>FHD, 144HZ, up-down stand</td>
+                    <td>blue + green + yellow + orange</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">10</td>
+                    <td class="weight">27 kg</td>
+                    <td class="price">$137.00</td>
+                    <td class="amount">$1,370.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>SHENZHEN HOPESTAR SCI-TECH</strong><br>Monitors</td>
+                    <td><img src="./img/2.jpg" alt="Product 2"></td>
+                    <td>Monitors</td>
+                    <td>FHD, 144HZ, up-down stand</td>
+                    <td>pantone 233C</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">5</td>
+                    <td class="weight">27 kg</td>
+                    <td class="price">$167.00</td>
+                    <td class="amount">$835.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>SHENZHEN HOPESTAR SCI-TECH</strong><br>Monitors</td>
+                    <td><img src="./img/3.png" alt="Product 2"></td>
+                    <td>Monitors</td>
+                    <td>FHD, 60HZ, up-down stand</td>
+                    <td>blue + green + yellow + orange</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">10</td>
+                    <td class="weight">27 kg</td>
+                    <td class="price">$120.00</td>
+                    <td class="amount">$1,200.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>SHENZHEN HOPESTAR SCI-TECH</strong><br>All In One</td>
+                    <td><img src="./img/Screenshot 2024-10-25 053550.png" alt="Product 2"></td>
+                    <td>All In One</td>
+                    <td>POS, 15.6+11.6 dual screen, i5 gen 6 8gB+256gb, wifi bluetooth, speaker, capacitive touch</td>
+                    <td>black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">5</td>
+                    <td class="weight">15.6 kg</td>
+                    <td class="price">$275.00</td>
+                    <td class="amount">$1,375.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>SHENZHEN HOPESTAR SCI-TECH</strong><br>All In One</td>
+                    <td><img src="./img/pic9.jpeg" alt="Product 2"></td>
+                    <td>All In One</td>
+                    <td>POS,15.6 Inch single screen, i5 gen 6 8gB+256gb, wifi bluetooth, speaker, capacitive touch</td>
+                    <td>black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">5</td>
+                    <td class="weight">15.6 kg</td>
+                    <td class="price">$243.00</td>
+                    <td class="amount">$1,215.00</td>
+                    <td>0.0</td>
+                </tr>
+
+                <tr>
+                    <td><strong>PANTUM INTERNATIONAL LIMITED</strong><br>Laser Printer</td>
+                    <td><img src="./img/download (1).jpeg" alt="Product 2"></td>
+                    <td>Laser Printer</td>
+                    <td>Laser Printer model OP221W(P2500W)</td>
+                    <td>black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">10</td>
+                    <td class="weight">## kg</td>
+                    <td class="price">$72.00</td>
+                    <td class="amount">$720.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>PANTUM INTERNATIONAL LIMITED</strong><br>Laser Printer</td>
+                    <td><img src="./img/download (2).jpeg" alt="Product 2"></td>
+                    <td>Laser Printer</td>
+                    <td>Laser Printer model OM222NW(M6550NW)</td>
+                    <td>black</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">15</td>
+                    <td class="weight">## kg</td>
+                    <td class="price">$115.00</td>
+                    <td class="amount">$1725.00</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td><strong>PANTUM INTERNATIONAL LIMITED</strong><br>Laser Printer</td>
+                    <td><img src="./img/600x600.jpeg" alt="Product 2"></td>
+                    <td>Laser Printer</td>
+                    <td>Laser Printer model OM331DW(M7100DW)</td>
+                    <td>white</td>
+                    <td>##</td>
+                    <td>##</td>
+                    <td class="quantity">5</td>
+                    <td class="weight">## kg</td>
+                    <td class="price">$135.00</td>
+                    <td class="amount">$675.00</td>
+                    <td>0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function sortTable() {
+            const table = document.querySelector(".product-table");
+            const tbody = table.querySelector("tbody");
+            const rows = Array.from(tbody.querySelectorAll("tr"));
+            const sortedRows = rows.sort((a, b) => {
+                const quantityA = parseInt(a.querySelector(".quantity").textContent);
+                const quantityB = parseInt(b.querySelector(".quantity").textContent);
+                return quantityB - quantityA;
+            });
+            tbody.innerHTML = "";
+            sortedRows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>
